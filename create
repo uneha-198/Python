@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+
+import os
+
+user=input("enter username::")
+for i in user:
+	if  i.isalpha()==True:
+		continue
+	else:
+		print("invalid username")
+		exit()
+
+
+passwd="hello"+user
+os.system("useradd -p"" "+passwd+" "+user)
+print("user is added to the os")
+
