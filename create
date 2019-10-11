@@ -10,7 +10,8 @@ for i in user:
 		print("invalid username")
 		exit()
 
-
+#passwd="hello"+user
+#passwd="hello"+user
 passwd="hello"+user
 os.system("useradd -p"" "+passwd+" "+user)
 print("user is added to the os")
